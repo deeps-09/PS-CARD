@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+  font-family: Outfit;
+}
+
+.hero{
+  color: blue;
+}
+.hero::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(43, 76, 207);
+  transform: scale(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+.hero:hover::after {
+  transform: scale(1);
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
+
+.shadow{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.newshadow {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.anothershadow {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.headshadow {
+  box-shadow: rgba(28, 83, 236, 0.638) 0px 20px 30px;
+}
+
+.button{
+  background-color: rgb(14, 203, 14);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
